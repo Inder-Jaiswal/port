@@ -110,9 +110,7 @@ export default function Player()
             torque.z += torqueStrength
         }
 
-        body.current.applyImpulse(impulse)
-        body.current.applyTorqueImpulse(torque)
-
+ 
         /**
          * Camera
          */
@@ -144,6 +142,12 @@ export default function Player()
 
         if(bodyPosition.y < - 4)
             restart()
+
+
+
+
+        body.current.applyImpulse(impulse)
+        body.current.applyTorqueImpulse(torque)
     })
 
     return <RigidBody
