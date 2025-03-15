@@ -24,12 +24,7 @@ export default function Experience()
     {
         mesh.castShadow = true
     })
-    const keybord= useGLTF('/Mars Curiosity Rover.glb')
-
-       keybord.scene.children.forEach((mesh) =>
-    {
-        mesh.castShadow = true
-    })
+   
     {/*const instances = useMemo(() =>
     useFrame((state) =>
     {
@@ -144,7 +139,6 @@ export default function Experience()
     </RigidBody>
 
         <Text
-            font="/bebas-neue-v9-latin-regular.woff"
             scale={ 1 }
             position={ [ -20 + 2.15 , 0.42, -2+20 ] }
             rotation = {[-Math.PI/2,0,0]}
@@ -891,7 +885,6 @@ export default function Experience()
 
 
         <Text
-            font="/bebas-neue-v9-latin-regular.woff"
             scale={ 1 }
             position={  [20 - 2.15 , 3.25, 2 ]}
             rotation = {[-Math.PI/2,0,0]}
@@ -923,11 +916,10 @@ export default function Experience()
 
 
         <Text
-            font="/bebas-neue-v9-latin-regular.woff"
             scale={ 1 }
             position={  [-20  , 3.25, -1 -12]}
             rotation = {[-Math.PI/2,0,0]}
-         > Big Fan of Arijit Singh
+         >            Big Fan of Arijit Singh
             <meshBasicMaterial toneMapped={ false } />
         </Text>
 
@@ -1142,7 +1134,6 @@ export default function Experience()
     
 
         <Text
-            font="/bebas-neue-v9-latin-regular.woff"
             scale={ 1 }
             position={  [   -4 - 2.15 , 3.25, -2-18 ]}
             rotation = {[-Math.PI/2,0,0]}
@@ -1235,7 +1226,6 @@ export default function Experience()
     </RigidBody>
 
         <Text
-            font="/bebas-neue-v9-latin-regular.woff"
             scale={ 1 }
             position={  [20 - 1.11 , 3.25, -2-22 ]}
             rotation = {[-Math.PI/2,0,0]}
@@ -1266,12 +1256,9 @@ export default function Experience()
         {/*bottom 1_6 -rb*/}
 //#endregion
 // #region for models
-  <RigidBody type="fixed" colliders="trimesh" position={ [ 0, 0, 0 ] } restitution={ 0.2 } friction={ 0 }>
-            <primitive object={ keybord.scene } scale={ 0.75 } />
-        </RigidBody> 
+  
 //#endregion
         <Text
-            font="/bebas-neue-v9-latin-regular.woff"
             scale={ 1 }
             position={  [20 - 1.11 , 3.25, -2-1 ]}
             rotation = {[-Math.PI/2,0,0]}
@@ -1312,7 +1299,6 @@ export default function Experience()
     </RigidBody>
 
         <Text
-            font="/bebas-neue-v9-latin-regular.woff"
             scale={ 1 }
             position={  [-12 - 2.15 ,3.25, -2 -6]}
             rotation = {[-Math.PI/2,0,0]}
@@ -1395,7 +1381,6 @@ export default function Experience()
     </RigidBody>
 
         <Text
-            font="/bebas-neue-v9-latin-regular.woff"
             scale={ 1 }
             position={  [   12 - 2.15 , 3.25, -2-6 ]}
             rotation = {[-Math.PI/2,0,0]}
@@ -1428,7 +1413,6 @@ export default function Experience()
 
 
         <Text
-            font="/bebas-neue-v9-latin-regular.woff"
             scale={ 1 }
             position={ [ 20-2.4, 0.25, 0.0 ] }
         >
