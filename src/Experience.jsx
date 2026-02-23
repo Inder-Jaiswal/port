@@ -19,11 +19,10 @@ export default function Experience()
     const wallMaterial = new THREE.MeshStandardMaterial({ color: 'slategrey' })
     let posx= 4;
     let posy=0;
-    const oldDoor= useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/door-old/model.gltf')
-      oldDoor.scene.children.forEach((mesh) =>
-    {
-        mesh.castShadow = true
-    })
+    // const oldDoor= useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/door-old/model.gltf')
+    //   oldDoor.scene.children.forEach((mesh) =>
+    // {
+    //     mesh.castShadow = true
    
     {/*const instances = useMemo(() =>
     useFrame((state) =>
@@ -1233,20 +1232,14 @@ export default function Experience()
            FINISH 
             <meshBasicMaterial toneMapped={ false } />
         </Text>
-        <RigidBody colliders="trimesh" position={ [22 - 0.025 , 0.05, -2-21.75] }  restitution = {0.1} friction={ 2}
-         >
-            <primitive object={ oldDoor.scene } scale={[1,0.9,1]} rotation = {[0,Math.PI/2,0]} />
-        </RigidBody>
-        {/*bottom 1_6 -lb*/}
-    <RigidBody type="fixed"><mesh position={ [20 - 2.15 , -0.25, -2-18 ] }
-        geometry={ boxGeometry } material={ wallMaterial }
-        scale={ [ 0.3, 1.5,2 ] } castShadow />
-    </RigidBody>
-        {/*bottom 1_6 -lt*/}
-    <RigidBody type="fixed"><mesh position={ [20 - 2.15 , -0.25, -4-18 ] }
-        geometry={ boxGeometry } material={ wallMaterial }
-        scale={ [ 0.3, 1.5,2 ] } castShadow />
-    </RigidBody>
+   
+   
+   
+   
+   
+   
+   
+   
         {/*bottom 1_6 -ob*/}
     <RigidBody type="fixed"><mesh position={ [20  , -0.25, -1-18 ] }  rotation={[0,Math.PI / 2,0]}
         geometry={ boxGeometry } material={ wallMaterial }
