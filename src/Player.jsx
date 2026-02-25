@@ -16,7 +16,6 @@ export default function Player()
     const end = useGame((state) => state.end)
     const restart = useGame((state) => state.restart)
     const blocksCount = useGame((state) => state.blocksCount)
-
     const jump = () =>
     {
         const origin = body.current.translation()
@@ -142,10 +141,6 @@ export default function Player()
 
         if(bodyPosition.y < - 4)
             restart()
-
-
-
-
         body.current.applyImpulse(impulse)
         body.current.applyTorqueImpulse(torque)
     })
